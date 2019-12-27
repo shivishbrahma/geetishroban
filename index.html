@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Music Player</title>
+    <!-- <link rel="stylesheet" href="css/font/flaticon.css" /> -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="navbar navbar-expand-lg navbar-light shadow">
+      <div class="container">
+        <a class="navbar-brand mx-auto" href="#">GeetiShroban</a>
+      </div>
+    </header>
+    <main class="py-3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-s6 justify-content-center">
+            <div class="msg-txt"></div>
+          </div>
+        </div>
+        <div class="row">
+          <img src="..." class="rounded mx-auto d-block picture" alt="..." />
+        </div>
+
+        <div class="row">
+          <div class="mx-auto d-block metcontainer text-center my-2">
+            <div class="marquee">
+              <span class="metadata"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <audio src="" class="audio-tag" loop=""></audio>
+        </div>
+
+        <div class="row bg-light player">
+          <div class="d-inline-block mx-auto">
+            <div class="d-inline-block px-2">
+              <div class="slidecontainer">
+                <div class="start-time p-1 d-inline-block mb-1">00:00:00</div>
+                <div class="d-inline-block">
+                  <input
+                    type="range"
+                    min="1"
+                    max="100"
+                    value="50"
+                    class="slider music-slider"
+                    id="myRange"
+                  />
+                </div>
+                <div class="end-time p-1 d-inline-block">00:00:00</div>
+              </div>
+            </div>
+
+            <i class="fa fa-step-backward"></i>
+            <i class="fa fa-play play-pause"></i>
+            <i class="fa fa-step-forward"></i>
+
+            <div class="d-inline-block px-2">
+              <div class="slidecontainer">
+                <div class="p-1 d-inline-block mb-1">
+                  <i class="fa fa-volume-down"></i>
+                </div>
+                <div class="d-inline-block">
+                  <input
+                    type="range"
+                    min="0.00"
+                    max="1.00"
+                    value="0.5"
+                    step="0.01"
+                    class="slider volume-slider"
+                    id="myRange"
+                  />
+                </div>
+                <div class="p-1 d-inline-block">
+                  <i class="fa fa-volume-up"></i>
+                </div>
+              </div>
+            </div>
+            <span><i class="fa fa-repeat"></i></span>
+          </div>
+        </div>
+
+        <div class="row">
+          <ul class="list-unstyled list-group playlist mx-auto"></ul>
+        </div>
+      </div>
+    </main>
+
+    <footer class="py-2">
+      <div class="container text-center">
+        <small>Copyright &copy; GeetiShroban</small>
+        | <small>Powered by Indic Amigo Akademi</small>
+      </div>
+    </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <script src="js/anime.min.js"></script>
+    <script src="js/songs.js"></script>
+    <script src="js/function.js"></script>
+  </body>
+</html>
