@@ -13,4 +13,4 @@ A jQuery and html based music playing app with a python scraper and youtube down
 	cd geetishroban
 	pip install -r requirements.txt
 	```
-*	
+**
