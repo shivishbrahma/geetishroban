@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Music Player</title>
-    <!-- <link rel="stylesheet" href="css/font/flaticon.css" /> -->
     <link
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
@@ -29,7 +28,12 @@
           </div>
         </div>
         <div class="row">
-          <img src="..." class="rounded mx-auto d-block picture" alt="..." />
+          <img
+            src="..."
+            class="rounded mx-auto d-block"
+            id="picture"
+            alt="..."
+          />
         </div>
 
         <div class="row">
@@ -55,17 +59,17 @@
                     min="1"
                     max="100"
                     value="50"
-                    class="slider music-slider"
-                    id="myRange"
+                    class="slider"
+                    id="music-slider"
                   />
                 </div>
                 <div class="end-time p-1 d-inline-block">00:00:00</div>
               </div>
             </div>
 
-            <i class="fa fa-step-backward"></i>
-            <i class="fa fa-play play-pause"></i>
-            <i class="fa fa-step-forward"></i>
+            <i class="fa fa-step-backward" id="step-backward"></i>
+            <i class="fa fa-play" id="play-pause"></i>
+            <i class="fa fa-step-forward" id="step-forward"></i>
 
             <div class="d-inline-block px-2">
               <div class="slidecontainer">
@@ -79,8 +83,8 @@
                     max="1.00"
                     value="0.5"
                     step="0.01"
-                    class="slider volume-slider"
-                    id="myRange"
+                    class="slider"
+                    id="volume-slider"
                   />
                 </div>
                 <div class="p-1 d-inline-block">
@@ -88,12 +92,12 @@
                 </div>
               </div>
             </div>
-            <span><i class="fa fa-repeat"></i></span>
+            <span><i class="fa fa-repeat" id="repeat"></i></span>
           </div>
         </div>
 
         <div class="row">
-          <ul class="list-unstyled list-group playlist mx-auto"></ul>
+          <ul class="list-unstyled list-group mx-auto" id="playlist"></ul>
         </div>
       </div>
     </main>

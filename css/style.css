@@ -136,7 +136,7 @@ footer {
   font-weight: bold;
   margin-top: 5px 0;
 }
-.picture {
+#picture {
   margin-bottom: 10px;
   width: 200px;
   display: inline-block;
@@ -151,7 +151,7 @@ i:focus {
   border-color: transparent;
 }
 
-.playlist {
+#playlist {
   background-color: #4cad4e;
   padding: 8px;
   margin-top: 10px;
@@ -159,10 +159,10 @@ i:focus {
   overflow: hidden;
 }
 
-.playlist li {
+#playlist li {
   overflow: hidden;
 }
-.playlist li div {
+#playlist li div {
   white-space: nowrap;
   color: antiquewhite;
 }
