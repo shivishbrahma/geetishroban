@@ -112,13 +112,13 @@ footer {
   background-color: #efeaea !important;
 }
 .player {
-  border-radius: 30px;
+  border-radius: 0;
   padding: 10px;
-  position: relative;
+  position: fixed;
+  bottom: 0;
   text-align: center;
-  max-width: 800px;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  margin: 0;
 }
 .gray-loop {
   color: #999;
@@ -135,6 +135,7 @@ footer {
 .metadata {
   font-weight: bold;
   margin-top: 5px 0;
+  color: rgb(2, 41, 2);
 }
 #picture {
   margin-bottom: 10px;
@@ -158,6 +159,12 @@ i:focus {
   max-width: 400px;
   overflow: hidden;
 }
+.playlist-container {
+  max-height: 50vh;
+  margin: auto;
+  margin-top: 10px;
+  overflow-y: scroll;
+}
 
 #playlist li {
   overflow: hidden;
@@ -170,4 +177,27 @@ i:focus {
   background-color: #049e26 !important;
   color: #efeaea;
   font-weight: bold;
+}
+
+.lyrics-container {
+  max-height: 50vh;
+  overflow-y: scroll;
+  padding: 1em;
+  margin: auto;
+  color: #0a640d;
+}
+
+.song-info-container {
+  max-height: 40vh;
+  overflow-y: scroll;
+  padding: 0.5em;
+}
+.songinfotable td {
+  background-color: #bcdbb8;
+  color: #2b632c;
+  margin: auto;
+  border: none !important;
+}
+h5 {
+  color: rgb(3, 58, 3);
 }

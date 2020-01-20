@@ -1,4 +1,4 @@
 spotdl
 youtube-dl
 bs4
-
+eyed3

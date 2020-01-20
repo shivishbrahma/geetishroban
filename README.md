@@ -5,12 +5,10 @@ A jQuery and html based music playing app with a python scraper and youtube down
 ## Features
 
 - Playlist (switch to any song on double click)
-
 - Play, Pause and Step Back and Forward on click and Next and Prev Song on double click
-
 - Volume increase and decrease
-
 - Added keyboard shortcuts
+- Added lyrics and song info
 
 ## Keyboard ShortCuts
 
@@ -37,13 +35,15 @@ A jQuery and html based music playing app with a python scraper and youtube down
 
   `pip install -r -I requirements.txt`
 
-- Download the songs using songscraper.py
+- Download the tracks using spotdl package
 
-  `python songscraper.py`
+  `spotdl -s "Alone Alan Walker`
 
-  [Note : You can install any other songs by changing songs array where you insert the song search queries. Here I used my own blog... [Geetilipi](http://geetilipi.tk), so many songs are not there, kindly check there.]
+- Extract images and metadata into songs.json using metadata.py script
 
-- Run the index.html in your browser.
+  `python metadata.py`
+
+- Run the index.html in your browser (if problems occurs use node server or serve using vscode servers).
 
 ## New Features to be added
 
