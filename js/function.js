@@ -323,7 +323,7 @@ $(() => {
 
         player.container.repeat.click(player.fn.repeat);
       },
-      url: '/js/songs.json'
+      url: './js/songs.json'
     });
   });
 });
