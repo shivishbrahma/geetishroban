@@ -65,7 +65,7 @@ $(() => {
     player.container.lyrics.html(player.playlist[player.index]['lyrics']);
     player.song.src = player.playlist[player.index]['src'];
     player.container.picture.attr('src', player.playlist[player.index]['img']);
-    $('.metadata').text(
+    $('.metadata').html(
       player.playlist[player.index]['title'] +
         ' - ' +
         player.playlist[player.index]['artist']
