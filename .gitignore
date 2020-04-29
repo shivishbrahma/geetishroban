@@ -1,1 +1,3 @@
-README.md.backup
+_site
+.jekyll-cache
+.vscode

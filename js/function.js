@@ -3,7 +3,7 @@ $(() => {
   const player = {};
   player.settings = {
     volume: 1,
-    track: 2
+    track: 2,
   };
   player.fn = {};
 
@@ -20,7 +20,7 @@ $(() => {
     repeat: $('#repeat'),
     forward: $('#step-forward'),
     backward: $('#step-backward'),
-    songInfo: $('#song-info')
+    songInfo: $('#song-info'),
   };
 
   player.fn.saveItems = () => {
@@ -38,7 +38,7 @@ $(() => {
   player.song = new Audio();
 
   // Convert seconds to Time
-  convertSecToTime = s => {
+  convertSecToTime = (s) => {
     let date = new Date(null);
     date.setSeconds(s); // specify value for SECONDS here
     return date.toISOString().substr(11, 8);
@@ -174,7 +174,7 @@ $(() => {
       'Organization',
       'Genre',
       'Copyright',
-      'Website'
+      'Website',
     ];
     for (i = 0; i < rowHeads.length; i++) {
       let row = $('<tr>').html(
@@ -220,7 +220,7 @@ $(() => {
   });
 
   // Shortcut keys
-  $(document).bind('keydown', evt => {
+  $(document).bind('keydown', (evt) => {
     switch (evt.keyCode) {
       case 13:
         player.fn.playPause(); // Enter Keypress
@@ -252,11 +252,11 @@ $(() => {
   $(document).ready(() => {
     $.ajax({
       dataType: 'json',
-      success: function(data) {
+      success: function (data) {
         player.playlist = data;
         player.fn.loadPlaylist();
         player.fn.loadSong();
-        console.log(player.playlist.length);
+        // console.log(player.playlist.length);
 
         // console.log($('.metadata').innerWidth());
 
@@ -269,7 +269,7 @@ $(() => {
           translateX: -width,
           duration: width * 55,
           loop: true,
-          easing: 'linear'
+          easing: 'linear',
         });
         const marqueeList = anime({
           targets: '.marquee-list',
@@ -283,7 +283,7 @@ $(() => {
           translateX: -width,
           duration: width * 55,
           loop: true,
-          easing: 'linear'
+          easing: 'linear',
         });
         $('.marquee-list').hover(
           () => {
@@ -323,7 +323,7 @@ $(() => {
 
         player.container.repeat.click(player.fn.repeat);
       },
-      url: '/js/songs.json'
+      url: './js/songs.json',
     });
   });
 });
