@@ -1,4 +1,5 @@
-# geetishroban
+# ![icon](images/icons/geetishroban_light.png) GeetiShroban
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A jQuery and html based music playing app with a python scraper and youtube downloader
 
@@ -50,4 +51,4 @@ A jQuery and html based music playing app with a python scraper and youtube down
 - Lyrics play along with the songs
 - New themes for the player
 - Player skins
-- Playlist add and delete options
+- Playlist add and delete optionsll
