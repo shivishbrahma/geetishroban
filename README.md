@@ -1,4 +1,4 @@
-# ![icon](images/icons/geetishroban_light.png) GeetiShroban
+# <img width=50 src="images/icons/geetishroban_light.png" > GeetiShroban
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A jQuery and html based music playing app with a python scraper and youtube downloader
