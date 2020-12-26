@@ -51,4 +51,4 @@ A jQuery and html based music playing app with a python scraper and youtube down
 - Lyrics play along with the songs
 - New themes for the player
 - Player skins
-- Playlist add and delete optionsll
+- Playlist add and delete options
